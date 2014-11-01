@@ -30,10 +30,14 @@ while actual_bias_value<= Bias_high_Value:
     actual_bias_value=np.around(actual_bias_value, decimals=4);
     print(actual_bias_value)
     #Convert to str
-    #actual_bias_value='%d'.format(actual_bias_value)
+    #Options: try on device which fits best
+    actual_bias_value_string = "{0:2g}" .format (actual_bias_value)
+    #Option
+    #actual_bias_value = "{0:f}" .format (actual_bias_value)
     #for debugging check output after formating
-    print(actual_bias_value)
+    print(actual_bias_value_string)
     
+   
 
 #For loop version
 #Does not work because float values are not allowed in this Version
